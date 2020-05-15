@@ -16,7 +16,14 @@
 .body {
   background-color: #ffffff;
   color: var(--primary-text-color);
-}
+
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  }
+
 /* Logo */
 
 .list {
@@ -25,6 +32,12 @@
 
 .logo {
   color: var(--primary-text-color);
+
+  font-family: Raleway, cursive;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
 }
 
 .logo-accent {
@@ -35,6 +48,12 @@
 
 .site-nav .link {
   color: var(--primary-text-color);
+
+  font-family: inherit;
+
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .site-nav .link:hover,
@@ -49,6 +68,12 @@
 /* Auth nav */
 .auth-nav .link {
   color: var(--title-text-color);
+
+  font-family: inherit;
+
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .auth-nav .link:hover,
@@ -62,54 +87,87 @@
 
 /* Footer */
 
-.footer {
+.page-footer {
   color: var(--complementary-color);
   background-color: #2f303a;
 }
 
 /* Logo */
 
-.footer .logo {
+.page-footer .logo {
   color: var(--complementary-color);
 }
 
-.footer .logo-accent {
+.logo {
+  color: var(--primary-text-color);
+
+  font-family: Raleway, cursive;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.18;
+  text-decoration: none;
+}
+
+.logo-accent {
+  color: var(--accent-color);
+}
+
+.page-footer .logo-accent {
   color: var(--accent-color);
 }
 
 /* Address */
 
-.address {
+.address .aside {
   color: var(--complementary-color);
+
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 .address .link {
   color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 /* Social */
 
-/* временный цвет фона */
-.socials .link {
-  color: var(--complementary-color);
-  background-color: var(--background-complementary-color);
+.social-links > .label,
+.subscribe > .label {
+   color: var(--complementary-color);
+  
+   font-size: 14px;
+   line-height: 16px;
+   font-weight: 700;
+   text-transform: uppercase;
 }
 
-.socials .link:hover {
+/* временный цвет фона */
+.social-links .link {
+  color: var(--complementary-color);
+  background-color: var(--background-complementary-color);
+
+  text-decoration: none;
+}
+
+.social-links .link:hover {
   background-color: var(--accent-color);
 }
 
-.socials .link.current {
+.social-links .link.current {
   background-color: var(--accent-color);
 }
 
 /* Button */
-.button-primary {
-  color: var(--complementary-color);
-  background-color: var(--accent-color);
-}
-.rights .text {
+ 
+.copyright {
   color: rgba(255, 255, 255, 0.4);
+
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+
 }
 
 /* Стили для index.html */
@@ -122,31 +180,68 @@
 
 .hero-title {
   color: var(--complementary-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
 /* Button */
-.button-primary {
+
+.button-primary{
   color: var(--complementary-color);
   background-color: var(--accent-color);
+  text-decoration: none;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
 }
 
 /* Section */
 
+.section-title {
+  color: var(--primary-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
 /* Features */
 
-.future .link {
+.future-list .title {
+  color: var(--primary-text-color)
+  
+  font-weight: 700;
+}
+
+.future-list .link {
   color: var(--primary-text-color);
   background-color: var(--background-complementary-color);
 }
 
-.future .link:hover {
+.future-list .link:hover {
   color: var(--complementary-color);
   background-color: var(--accent-color.);
 }
 
-.future .link.current {
+.future-list .link.current {
   color: var(--complementary-color);
   background-color: var(--accent-color);
+}
+
+.future-list .text {
+  color: var(--title-text-color);
+  
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 /* Profile */
@@ -157,24 +252,43 @@
 
 .profile .subtitle {
   color: var(--complementary-color);
+  
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* Team */
 
 .section-team {
-  background-color: #f5f4fa;
+  background-color: #F5F4FA;
 }
 
 .team .item {
   background-color: #ffffff;
 }
 
+.team .title{
+  color: var(--primary-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
 .team .text {
   color: var(--title-text-color);
+
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
 }
 
 .team .link {
   color: #afb1b8;
+
+  text-decoration: none;
 }
 
 .team .link:hover,
@@ -192,6 +306,14 @@
   color: var(--primary-text-color);
 }
 
+.portfolio .nav {
+  
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+}
+
 .portfolio .nav:hover,
 .portfolio .nav:focus {
   color: var(--complementary-color);
@@ -201,4 +323,29 @@
 .portfolio .nav.current {
   color: var(--complementary-color);
   background-color: var(--accent-color);
+}
+
+/* Web site */
+.block .title {
+  color: var(--primary-text-color);
+  
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.block .text {
+  color: var(--title-text-color);
+  
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+/* Временный цвет */
+.block .desc {
+  color: var(--primary-text-color);
+  
+  font-size: 18px;
+  line-height: 1.55;
 }
